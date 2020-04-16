@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 2337074159000356742}
   - component: {fileID: 2337074158999389510}
   - component: {fileID: 6176121037872051012}
+  - component: {fileID: 6165959607819328819}
   m_Layer: 0
   m_Name: Shotgun
   m_TagString: Untagged
@@ -332,9 +333,24 @@ MonoBehaviour:
   range: 10
   damage: 60
   muzzleFlash: {fileID: 3533507673273963499}
-  hitEffect: {fileID: 3279435770915515986}
+  hitEffect: {fileID: 2443311050788194638, guid: cecddc82c66546241b55ec6df9a687e5,
+    type: 3}
   ammoSlot: {fileID: 0}
+  ammoType: 1
   timeBetweenShots: 2
+--- !u!114 &6165959607819328819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2337074158997199750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38ea574f5fdc232429ce52e3b1c4e639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoSlots: []
 --- !u!1 &2337074158997199752
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,12 +682,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a60d8477aafac045a1f56d3a60c7813, type: 3}
---- !u!1 &3279435770915515986 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3360542172024696037, guid: 4a60d8477aafac045a1f56d3a60c7813,
-    type: 3}
-  m_PrefabInstance: {fileID: 225723387834565303}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3268527238156874916 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3350055855090824723, guid: 4a60d8477aafac045a1f56d3a60c7813,
