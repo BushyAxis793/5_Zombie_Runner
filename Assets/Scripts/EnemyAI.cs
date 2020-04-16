@@ -19,6 +19,10 @@ public class EnemyAI : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
+    public void OnDamageTaken()
+    {
+        Debug.Log(name + "bla bla bla");
+    }
 
     void Update()
     {
@@ -47,6 +51,8 @@ public class EnemyAI : MonoBehaviour
         {
             AttackTarget();
         }
+
+        
     }
 
     private void ChaseTarget()
