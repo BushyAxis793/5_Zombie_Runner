@@ -184,9 +184,10 @@ GameObject:
   - component: {fileID: 1192173528}
   - component: {fileID: 7605667136841591956}
   - component: {fileID: 8546391271891558421}
+  - component: {fileID: 6314478336863086817}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -350,6 +351,20 @@ MonoBehaviour:
     ammoAmount: 20
   - ammoType: 2
     ammoAmount: 8
+--- !u!114 &6314478336863086817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9776ed58e05bc5b49a1cb885e75338b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactCanvas: {fileID: 0}
+  impactTime: 0.3
 --- !u!1 &85416517731768661
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,8 +431,9 @@ MonoBehaviour:
   hitEffect: {fileID: 2443311050788194638, guid: cecddc82c66546241b55ec6df9a687e5,
     type: 3}
   ammoSlot: {fileID: 8546391271891558421}
-  ammoType: 0
+  ammoType: 2
   timeBetweenShots: 0.5
+  ammoText: {fileID: 0}
 --- !u!114 &1330460365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,8 +629,7 @@ PrefabInstance:
       propertyPath: fpsController
       value: 
       objectReference: {fileID: 11400004}
-    m_RemovedComponents:
-    - {fileID: 7976173688645332480, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
 --- !u!1 &531405951667386700 stripped
 GameObject:
@@ -781,8 +796,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1384516152350536273, guid: 094b98efc06735644b3bb4100ffe2ab2, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 094b98efc06735644b3bb4100ffe2ab2, type: 3}
 --- !u!1 &6538589839011936091 stripped
 GameObject:
